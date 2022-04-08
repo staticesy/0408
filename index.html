@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>원페이지 스크롤레이아웃(세로) - 스티키(stiky) 내비게이션 포함</title>
+  <!-- 초기화 -->
+  <link href="./css/reset.css" rel="stylesheet" type="text/css">
+
+  <!-- 아이콘폰트 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+  <!-- 스크롤 레이아웃 서식 -->
+  <link href="./css/layout.css" rel="stylesheet" type="text/css">
+  <link href="./css/gallery.css" rel="stylesheet" type="text/css">
+
+  <!-- 접두사 자동으로 붙여주는 소스 -->
+  <script src="script/prefixfree.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+  <script src="./script/layout.js"></script>
+  <script src="./script/gallery.js"></script>
+
+</head>
+<body>
+  <div id="wrap">
+    <!-- 첫페이지  -->
+    <header class="intro">
+      <div class="header_inner">
+        <div class="title">
+          <h1><small>Project Title</small>
+            portfolio
+          </h1>
+          <img src="./images/intro01.png" alt="photo" class="photo">
+          <p>간단한 설명 문구가 들어감 - UI/UX DESIGN, PUBLISHING, 나는 이런 인재다..  문구..</p>
+        </div>
+        <span><i class="fas fa-mouse"></i><br>Scroll</span>
+      </div>
+    </header>
+
+    <!-- 스티키 내비게이션  -->
+    <nav class="gnb">
+      <div class="n_inner">
+        <ul>
+          <li><a href="#" title="profile">profile</a></li>
+          <li><a href="#" title="ui/ux design">ui/ux design</a></li>
+          <li><a href="#" title="publishing">publishing</a></li>
+          <li><a href="#" title="work">work</a></li>
+          <li><a href="#" title="contact us">contact us</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- 메인 -->
+    <main>
+      <section>
+        <h2>content</h2>
+        <!-- profile -->
+        <article id="profile">
+          <h3>profile</h3>
+          <div class="photo01">사진</div>
+          <div class=info01>정보1</div>
+          <div class=info02>정보2</div>
+          <div class=info03>정보4</div>
+        </article>
+
+        <!-- design -->
+        <article id="design">
+          <h3>design</h3>
+          <nav class="g_gnb">
+            <ul>
+              <li><a href="#" title="전체보기">전체보기</a></li>
+              <li><a href="#" title="프로젝트">프로젝트</a></li>
+              <li><a href="#" title="설계">설계</a></li>
+              <li><a href="#" title="디자인">디자인</a></li>
+              <li><a href="#" title="개발">개발</a></li>
+            </ul>
+          </nav>
+          <ul class="g_list">
+            <li class="total project">
+              <a href="#" title="계획">
+                <img src="./images/img1.jpg" alt="계획">
+                <p class="caption">계획 - 뷰티</p>
+              </a>
+            </li>
+            <li class="total design">
+              <a href="#" title="디자인">
+                <img src="./images/img2.jpg" alt="디자인">
+                <p class="caption">디자인 - 뷰티</p>
+              </a>
+            </li>
+            <li class="total process">
+              <a href="#" title="설계">
+                <img src="./images/img3.jpg" alt="설계">
+                <p class="caption">설계 - 식음료</p>
+              </a>
+            </li>
+            <li class="total design">
+              <a href="#" title="디자인">
+                <img src="./images/img4.jpg" alt="디자인">
+                <p class="caption">디자인 - 자유주제</p>
+              </a>
+            </li>
+            <li class="total project">
+              <a href="#" title="계획">
+                <img src="./images/img5.jpg" alt="계획">
+                <p class="caption">계획 - 자유주제</p>
+              </a>
+            </li>
+            <li class="total design">
+              <a href="#" title="디자인">
+                <img src="./images/img6.jpg" alt="디자인">
+                <p class="caption">디자인 - 자유주제</p>
+              </a>
+            </li>
+            <li class="total design">
+              <a href="#" title="디자인">
+                <img src="./images/img7.jpg" alt="디자인">
+                <p class="caption">디자인 - 뷰티</p>
+              </a>
+            </li>
+            <li class="total design">
+              <a href="#" title="디자인">
+                <img src="./images/img8.jpg" alt="디자인">
+                <p class="caption">디자인 - 자유주제</p>
+              </a>
+            </li>
+            <li class="total coding">
+              <a href="#" title="개발">
+                <img src="./images/img9.png" alt="개발">
+                <p class="caption">개발 - 식음료</p>
+              </a>
+            </li>
+            <li class="total project">
+              <a href="#" title="계획">
+                <img src="./images/img10.jpg" alt="계획">
+                <p class="caption">계획 - 뷰티</p>
+              </a>
+            </li>
+            <li class="total coding">
+              <a href="#" title="개발">
+                <img src="./images/img11.png" alt="개발">
+                <p class="caption">개발 - 뷰티</p>
+              </a>
+            </li>
+            <li class="total process">
+              <a href="#" title="설계">
+                <img src="./images/img12.jpg" alt="설계">
+                <p class="caption">설계 - 뷰티</p>
+              </a>
+            </li>
+          </ul>
+        </article>
+
+        <!-- publishing -->
+        <article id='publishing'>
+          <h3>publishing</h3>
+        </article>
+
+        <!-- work -->
+        <article id='work'>
+            <h3>work</h3>
+        </article>
+
+        <!-- contact us -->
+        <article id="contact">
+          <h3>contact</h3>
+        </article>
+      </section>
+
+      <!-- 푸터영역 -->
+      <footer>
+        <address>Copyright&copy; 2022 00000000 Portfolio allrights reserved.</address>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
